@@ -1,0 +1,63 @@
+/* Define a color palette */
+:root {
+  --primary-color: #ff9933;  /* Orange */
+  --secondary-color: #33ccff; /* Light blue */
+  --text-color: #333;        /* Dark grey */
+  --accent-color: #ffcc00;   /* Light yellow */
+}
+
+body {
+  width: 300px;
+  height: 200px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  transition: background-color 0.5s ease; /* Add transition effect */
+}
+
+body:hover {
+  background-color: var(--secondary-color); /* Change background on hover */
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Add text shadow */
+  animation: fade-in 1s ease; /* Add animation effect */
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+p {
+  font-size: 20px;
+  color: var(--text-color);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  animation: slide-up 1s ease; /* Add animation effect */
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
